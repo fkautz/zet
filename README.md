@@ -1,4 +1,4 @@
-These are my notes.
+These are my notes. Search them using GitHub search bar at the top!
 
 Since they are notes, please excuse any inaccuracies.
 
