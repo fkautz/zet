@@ -20,6 +20,8 @@ We could register zets for others to read.
 
 ## GitHub Bug:
 GitHub disregards the last directory if you provide a filename.
+```
 	https://github.com/fkautz/zt.dev/new/main/01234567890123?filename=foo.md results in zt.dev/foo.md
 	https://github.com/fkautz/zt.dev/new/main/01234567890123/?filename=foo.md results in zt.dev/foo.md
 	https://github.com/fkautz/zt.dev/new/main/01234567890123/discarded?filename=foo.md results in zt.dev/01234567890123/foo.md
+```
