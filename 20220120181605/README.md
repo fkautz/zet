@@ -86,6 +86,7 @@ cat: /etc/shadow: Permission denied
 Once you have gained the `CAP_SYS_ADMIN` capability, the exploit in legacy_parse_param becomes reachable and the system may then be exploited.
 
 ## References
-https://seclists.org/oss-sec/2022/q1/55
-https://www.kernel.org/doc/html/latest/userspace-api/unshare.html
-https://www.redhat.com/sysadmin/mount-namespaces
+
+* https://seclists.org/oss-sec/2022/q1/55
+* https://www.kernel.org/doc/html/latest/userspace-api/unshare.html
+* https://www.redhat.com/sysadmin/mount-namespaces
