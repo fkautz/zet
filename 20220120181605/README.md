@@ -85,6 +85,19 @@ cat: /etc/shadow: Permission denied
 
 Once you have gained the `CAP_SYS_ADMIN` capability, the exploit in legacy_parse_param becomes reachable and the system may then be exploited.
 
+## Disabling unprivileged user namespace creation
+
+As root (real root):
+```sh
+sysctl -w kernel.unprivileged_userns_clone=1
+```
+
+As the user:
+```sh
+unshare -m -r /bin/bash
+unshare: unshare failed: Operation not permitted
+```
+
 ## References
 
 * https://seclists.org/oss-sec/2022/q1/55
