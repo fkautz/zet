@@ -1,7 +1,7 @@
 # CVE-2022-0185
 
 * TLDR 1: Update your kernel!
-* TLDR 2: Always drop capabilities or future CVEs will burn you!
+* TLDR 2: Always drop capabilities and permissions or future CVEs will burn you!
 
 A recent vulnerability was discovered where an integer underflow bypasses a bounds check, allowing for unconstrained writes to anywhere in memory.
 Skipping most of the details, I discovered in the announcement that `CAP_SYS_ADMIN` is required to exploit it.
